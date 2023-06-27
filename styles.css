@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background-color: #111;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+pre {
+  background-color: #000;
+  color: #fff;
+  font-family: monospace;
+  line-height: 1;
+  user-select: none;
+  margin: 0;
+  transform: scale(0.6);
+}
+
+.mobile-button {
+  user-select: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  font-size: 32px;
+  font-weight: bold;
+  -webkit-tap-highlight-color: transparent;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  opacity: 0.2;
+  z-index: 2;
+  transition: ease-in-out 0.1s;
+}
+
+.mobile-button:hover,
+.mobile-button:active {
+  opacity: 1;
+  scale: 1.1;
+}
+
+#fireButton {
+  right: 16px;
+  position: fixed;
+  bottom: 16px;
+}
+
+.arrows {
+  display: flex;
+  gap: 32px;
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+}
+
+@media (min-height: 390px) and (min-width: 640px) {
+  pre {
+    transform: scale(1);
+  }
+
+  .mobile-button,
+  .arrows {
+    display: none;
+  }
+}
