@@ -6,7 +6,7 @@
   <img src='print.png' />
   <img src='animation.gif' />
 
-<h2><a href='https://alex5ander.itch.io/ascii-invaders' >
+<h2><a target='_blank' href='https://alex5ander.itch.io/ascii-invaders' >
 Play!</a></h2>
 
 </div>
